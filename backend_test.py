@@ -630,7 +630,7 @@ class RacingAppTester:
         """Test 20: Create Group with Members"""
         # We need the second user's ID, let's get it by logging in as them
         second_user_data = {
-            "email": "racer.jane@example.com",
+            "email": self.second_user_email,
             "password": "SecurePass456!"
         }
         
