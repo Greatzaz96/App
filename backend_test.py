@@ -65,11 +65,14 @@ class RacingAppTester:
 
     def test_user_registration(self):
         """Test 1: User Registration"""
+        import time
+        timestamp = int(time.time())
         test_data = {
-            "email": "racer.john@example.com",
+            "email": f"racer.john.{timestamp}@example.com",
             "password": "SecurePass123!",
             "name": "John Racer"
         }
+        self.test_email = test_data["email"]
         
         try:
             response = self.make_request("POST", "/auth/register", test_data)
