@@ -139,7 +139,7 @@ class RacingAppTester:
     def test_wrong_password_login(self):
         """Test 23: Login with wrong password should fail"""
         test_data = {
-            "email": "racer.john@example.com",
+            "email": self.test_email,
             "password": "WrongPassword123!"
         }
         
