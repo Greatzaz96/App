@@ -432,11 +432,14 @@ class RacingAppTester:
     def test_join_race(self):
         """Test 14: Join Race (create second user first)"""
         # First create a second user
+        import time
+        timestamp = int(time.time())
         second_user_data = {
-            "email": "racer.jane@example.com",
+            "email": f"racer.jane.{timestamp}@example.com",
             "password": "SecurePass456!",
             "name": "Jane Racer"
         }
+        self.second_user_email = second_user_data["email"]
         
         original_token = self.auth_token
         try:
