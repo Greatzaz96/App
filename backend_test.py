@@ -540,7 +540,7 @@ class RacingAppTester:
     def test_send_friend_request(self):
         """Test 17: Send Friend Request by Email"""
         test_data = {
-            "friend_email": "racer.jane@example.com"  # The second user we created
+            "friend_email": self.second_user_email  # The second user we created
         }
         
         try:
