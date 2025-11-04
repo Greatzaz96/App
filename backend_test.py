@@ -115,7 +115,7 @@ class RacingAppTester:
     def test_user_login(self):
         """Test 2: User Login"""
         test_data = {
-            "email": "racer.john@example.com",
+            "email": self.test_email,
             "password": "SecurePass123!"
         }
         
