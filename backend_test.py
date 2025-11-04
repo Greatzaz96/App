@@ -435,6 +435,7 @@ class RacingAppTester:
             "name": "Jane Racer"
         }
         
+        original_token = self.auth_token
         try:
             response = self.make_request("POST", "/auth/register", second_user_data)
             if response.status_code != 200:
@@ -442,7 +443,6 @@ class RacingAppTester:
                 return False
                 
             second_user_token = response.json()["access_token"]
-            original_token = self.auth_token
             self.auth_token = second_user_token
             
             # Now try to join the race
