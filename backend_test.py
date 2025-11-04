@@ -95,7 +95,7 @@ class RacingAppTester:
     def test_duplicate_registration(self):
         """Test 22: Registration with existing email should fail"""
         test_data = {
-            "email": "racer.john@example.com",  # Same email as before
+            "email": self.test_email,  # Same email as before
             "password": "AnotherPass123!",
             "name": "Another John"
         }
