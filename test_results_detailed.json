@@ -1,0 +1,243 @@
+{
+  "summary": {
+    "total": 26,
+    "passed": 25,
+    "failed": 1,
+    "success_rate": 96.15384615384616
+  },
+  "results": [
+    {
+      "test": "User Registration",
+      "success": true,
+      "details": "User created with ID: c2417784-7e73-4fc1-a5dc-a2944535391e",
+      "timestamp": "2025-11-04T21:20:02.498966",
+      "response_data": null
+    },
+    {
+      "test": "User Login",
+      "success": true,
+      "details": "Login successful for user: John Racer",
+      "timestamp": "2025-11-04T21:20:03.677801",
+      "response_data": null
+    },
+    {
+      "test": "Get Current User",
+      "success": true,
+      "details": "Retrieved user: John Racer (racer.john@example.com)",
+      "timestamp": "2025-11-04T21:20:03.705931",
+      "response_data": null
+    },
+    {
+      "test": "Create Public Circuit",
+      "success": true,
+      "details": "Created circuit: Silverstone Grand Prix Circuit (ID: d47f666b-4d58-4baa-b905-60119e3d8d65)",
+      "timestamp": "2025-11-04T21:20:04.000761",
+      "response_data": null
+    },
+    {
+      "test": "Create Private Circuit",
+      "success": true,
+      "details": "Created private circuit: My Private Track (ID: e4e9737e-8361-4240-a760-62da113f8710)",
+      "timestamp": "2025-11-04T21:20:04.041366",
+      "response_data": null
+    },
+    {
+      "test": "Get All Circuits",
+      "success": true,
+      "details": "Retrieved 2 circuits (1 public, 1 private)",
+      "timestamp": "2025-11-04T21:20:04.156804",
+      "response_data": null
+    },
+    {
+      "test": "Get Public Circuits",
+      "success": true,
+      "details": "Retrieved 1 public circuits",
+      "timestamp": "2025-11-04T21:20:04.184873",
+      "response_data": null
+    },
+    {
+      "test": "Get Private Circuits",
+      "success": false,
+      "details": "Some circuits are public",
+      "timestamp": "2025-11-04T21:20:04.215743",
+      "response_data": [
+        {
+          "id": "e4e9737e-8361-4240-a760-62da113f8710",
+          "name": "My Private Track",
+          "creator_id": "c2417784-7e73-4fc1-a5dc-a2944535391e",
+          "creator_name": "John Racer",
+          "coordinates": [
+            {
+              "latitude": 51.5074,
+              "longitude": -0.1278
+            },
+            {
+              "latitude": 51.508,
+              "longitude": -0.127
+            },
+            {
+              "latitude": 51.5075,
+              "longitude": -0.1265
+            }
+          ],
+          "distance": 2.5,
+          "is_public": false,
+          "created_at": "2025-11-04T21:20:04.015000"
+        },
+        {
+          "id": "d47f666b-4d58-4baa-b905-60119e3d8d65",
+          "name": "Silverstone Grand Prix Circuit",
+          "creator_id": "c2417784-7e73-4fc1-a5dc-a2944535391e",
+          "creator_name": "John Racer",
+          "coordinates": [
+            {
+              "latitude": 52.0786,
+              "longitude": -1.0169
+            },
+            {
+              "latitude": 52.079,
+              "longitude": -1.0165
+            },
+            {
+              "latitude": 52.0785,
+              "longitude": -1.016
+            },
+            {
+              "latitude": 52.078,
+              "longitude": -1.0165
+            }
+          ],
+          "distance": 5.891,
+          "is_public": true,
+          "created_at": "2025-11-04T21:20:03.721000"
+        }
+      ]
+    },
+    {
+      "test": "Get Circuit by ID",
+      "success": true,
+      "details": "Retrieved circuit: Silverstone Grand Prix Circuit",
+      "timestamp": "2025-11-04T21:20:04.257189",
+      "response_data": null
+    },
+    {
+      "test": "Delete Circuit",
+      "success": true,
+      "details": "Successfully deleted circuit: e4e9737e-8361-4240-a760-62da113f8710",
+      "timestamp": "2025-11-04T21:20:04.440111",
+      "response_data": null
+    },
+    {
+      "test": "Create Race",
+      "success": true,
+      "details": "Created race: f12f4d38-206f-49e1-9f33-976245adfc65 on circuit Silverstone Grand Prix Circuit",
+      "timestamp": "2025-11-04T21:20:04.579385",
+      "response_data": null
+    },
+    {
+      "test": "Get All Races",
+      "success": true,
+      "details": "Retrieved 1 races",
+      "timestamp": "2025-11-04T21:20:04.676312",
+      "response_data": null
+    },
+    {
+      "test": "Filter Races by Status",
+      "success": true,
+      "details": "Retrieved 1 waiting races",
+      "timestamp": "2025-11-04T21:20:04.733289",
+      "response_data": null
+    },
+    {
+      "test": "Join Race",
+      "success": true,
+      "details": "Successfully joined race: f12f4d38-206f-49e1-9f33-976245adfc65",
+      "timestamp": "2025-11-04T21:20:05.626633",
+      "response_data": null
+    },
+    {
+      "test": "Start Race",
+      "success": true,
+      "details": "Successfully started race: f12f4d38-206f-49e1-9f33-976245adfc65",
+      "timestamp": "2025-11-04T21:20:05.700613",
+      "response_data": null
+    },
+    {
+      "test": "Get Race Leaderboard",
+      "success": true,
+      "details": "Retrieved leaderboard with 2 participants",
+      "timestamp": "2025-11-04T21:20:05.717933",
+      "response_data": null
+    },
+    {
+      "test": "Send Friend Request",
+      "success": true,
+      "details": "Successfully sent friend request",
+      "timestamp": "2025-11-04T21:20:05.874192",
+      "response_data": null
+    },
+    {
+      "test": "Get Friends List",
+      "success": true,
+      "details": "Retrieved 1 friend entries",
+      "timestamp": "2025-11-04T21:20:05.889222",
+      "response_data": null
+    },
+    {
+      "test": "Accept Friend Request",
+      "success": true,
+      "details": "Successfully accepted friend request",
+      "timestamp": "2025-11-04T21:20:06.626399",
+      "response_data": null
+    },
+    {
+      "test": "Create Group",
+      "success": true,
+      "details": "Created group: Racing Buddies with 2 members",
+      "timestamp": "2025-11-04T21:20:07.462793",
+      "response_data": null
+    },
+    {
+      "test": "Get Groups",
+      "success": true,
+      "details": "Retrieved 1 groups",
+      "timestamp": "2025-11-04T21:20:07.626344",
+      "response_data": null
+    },
+    {
+      "test": "Duplicate Registration (Should Fail)",
+      "success": true,
+      "details": "Correctly rejected duplicate email",
+      "timestamp": "2025-11-04T21:20:07.678432",
+      "response_data": null
+    },
+    {
+      "test": "Wrong Password Login (Should Fail)",
+      "success": true,
+      "details": "Correctly rejected wrong password",
+      "timestamp": "2025-11-04T21:20:09.221376",
+      "response_data": null
+    },
+    {
+      "test": "Unauthorized Access (Should Fail)",
+      "success": true,
+      "details": "Correctly rejected request without token",
+      "timestamp": "2025-11-04T21:20:09.380450",
+      "response_data": null
+    },
+    {
+      "test": "Create Race on Non-existent Circuit (Should Fail)",
+      "success": true,
+      "details": "Correctly rejected non-existent circuit",
+      "timestamp": "2025-11-04T21:20:09.406673",
+      "response_data": null
+    },
+    {
+      "test": "Join Non-existent Race (Should Fail)",
+      "success": true,
+      "details": "Correctly rejected non-existent race",
+      "timestamp": "2025-11-04T21:20:09.459513",
+      "response_data": null
+    }
+  ]
+}
