@@ -587,7 +587,7 @@ class RacingAppTester:
             
         # Switch to the second user to accept the request
         second_user_data = {
-            "email": "racer.jane@example.com",
+            "email": self.second_user_email,
             "password": "SecurePass456!"
         }
         
