@@ -289,7 +289,7 @@ async def get_circuits(is_public: Optional[bool] = None, current_user: dict = De
         if is_public:
             query["is_public"] = True
         else:
-            query["creator_id"] = current_user["_id"]
+            query = {"creator_id": current_user["_id"], "is_public": False}
     else:
         # Return both public and user's private circuits
         query = {"$or": [{"is_public": True}, {"creator_id": current_user["_id"]}]}
