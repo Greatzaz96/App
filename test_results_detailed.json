@@ -1,191 +1,191 @@
 {
   "summary": {
     "total": 26,
-    "passed": 23,
-    "failed": 3,
-    "success_rate": 88.46153846153845
+    "passed": 26,
+    "failed": 0,
+    "success_rate": 100.0
   },
   "results": [
     {
       "test": "User Registration",
-      "success": false,
-      "details": "Status: 400",
-      "timestamp": "2025-11-04T21:21:21.896208",
-      "response_data": "{\"detail\":\"Email already registered\"}"
+      "success": true,
+      "details": "User created with ID: 047646f8-ba65-4109-b15b-afed4f47ae10",
+      "timestamp": "2025-11-04T21:23:01.059492",
+      "response_data": null
     },
     {
       "test": "User Login",
       "success": true,
       "details": "Login successful for user: John Racer",
-      "timestamp": "2025-11-04T21:21:22.793478",
+      "timestamp": "2025-11-04T21:23:01.656899",
       "response_data": null
     },
     {
       "test": "Get Current User",
       "success": true,
-      "details": "Retrieved user: John Racer (racer.john@example.com)",
-      "timestamp": "2025-11-04T21:21:22.816329",
+      "details": "Retrieved user: John Racer (racer.john.1762291379@example.com)",
+      "timestamp": "2025-11-04T21:23:01.678430",
       "response_data": null
     },
     {
       "test": "Create Public Circuit",
       "success": true,
-      "details": "Created circuit: Silverstone Grand Prix Circuit (ID: 35218fac-95c9-4ec5-9b86-472c98b77ef0)",
-      "timestamp": "2025-11-04T21:21:22.910008",
+      "details": "Created circuit: Silverstone Grand Prix Circuit (ID: eb1fb34e-ad46-4f03-b76c-0ffe2429c5c7)",
+      "timestamp": "2025-11-04T21:23:01.749110",
       "response_data": null
     },
     {
       "test": "Create Private Circuit",
       "success": true,
-      "details": "Created private circuit: My Private Track (ID: 7b3ed742-402e-42ba-8ded-08fd7fe59820)",
-      "timestamp": "2025-11-04T21:21:22.957141",
+      "details": "Created private circuit: My Private Track (ID: cd725eeb-0cf0-4721-ba6c-69d1e4c5071a)",
+      "timestamp": "2025-11-04T21:23:01.812218",
       "response_data": null
     },
     {
       "test": "Get All Circuits",
       "success": true,
-      "details": "Retrieved 5 circuits (4 public, 1 private)",
-      "timestamp": "2025-11-04T21:21:22.996038",
+      "details": "Retrieved 6 circuits (5 public, 1 private)",
+      "timestamp": "2025-11-04T21:23:01.841254",
       "response_data": null
     },
     {
       "test": "Get Public Circuits",
       "success": true,
-      "details": "Retrieved 4 public circuits",
-      "timestamp": "2025-11-04T21:21:23.181804",
+      "details": "Retrieved 5 public circuits",
+      "timestamp": "2025-11-04T21:23:01.881572",
       "response_data": null
     },
     {
       "test": "Get Private Circuits",
       "success": true,
       "details": "Retrieved 1 private circuits",
-      "timestamp": "2025-11-04T21:21:23.251789",
+      "timestamp": "2025-11-04T21:23:01.912438",
       "response_data": null
     },
     {
       "test": "Get Circuit by ID",
       "success": true,
       "details": "Retrieved circuit: Silverstone Grand Prix Circuit",
-      "timestamp": "2025-11-04T21:21:23.279159",
+      "timestamp": "2025-11-04T21:23:01.945003",
       "response_data": null
     },
     {
       "test": "Delete Circuit",
       "success": true,
-      "details": "Successfully deleted circuit: 7b3ed742-402e-42ba-8ded-08fd7fe59820",
-      "timestamp": "2025-11-04T21:21:23.394117",
+      "details": "Successfully deleted circuit: cd725eeb-0cf0-4721-ba6c-69d1e4c5071a",
+      "timestamp": "2025-11-04T21:23:02.009917",
       "response_data": null
     },
     {
       "test": "Create Race",
       "success": true,
-      "details": "Created race: 39b153eb-cb62-48da-b3db-c86273fab991 on circuit Silverstone Grand Prix Circuit",
-      "timestamp": "2025-11-04T21:21:23.504531",
+      "details": "Created race: dd0896f9-81b9-481f-a8cb-6a055f14f432 on circuit Silverstone Grand Prix Circuit",
+      "timestamp": "2025-11-04T21:23:02.059154",
       "response_data": null
     },
     {
       "test": "Get All Races",
       "success": true,
-      "details": "Retrieved 3 races",
-      "timestamp": "2025-11-04T21:21:23.642680",
+      "details": "Retrieved 4 races",
+      "timestamp": "2025-11-04T21:23:02.080006",
       "response_data": null
     },
     {
       "test": "Filter Races by Status",
       "success": true,
       "details": "Retrieved 2 waiting races",
-      "timestamp": "2025-11-04T21:21:23.691368",
+      "timestamp": "2025-11-04T21:23:02.100514",
       "response_data": null
     },
     {
       "test": "Join Race",
-      "success": false,
-      "details": "Failed to create second user for testing",
-      "timestamp": "2025-11-04T21:21:23.776131",
-      "response_data": "{\"detail\":\"Email already registered\"}"
+      "success": true,
+      "details": "Successfully joined race: dd0896f9-81b9-481f-a8cb-6a055f14f432",
+      "timestamp": "2025-11-04T21:23:02.961478",
+      "response_data": null
     },
     {
       "test": "Start Race",
       "success": true,
-      "details": "Successfully started race: 39b153eb-cb62-48da-b3db-c86273fab991",
-      "timestamp": "2025-11-04T21:21:23.807260",
+      "details": "Successfully started race: dd0896f9-81b9-481f-a8cb-6a055f14f432",
+      "timestamp": "2025-11-04T21:23:03.001411",
       "response_data": null
     },
     {
       "test": "Get Race Leaderboard",
       "success": true,
-      "details": "Retrieved leaderboard with 1 participants",
-      "timestamp": "2025-11-04T21:21:23.892695",
+      "details": "Retrieved leaderboard with 2 participants",
+      "timestamp": "2025-11-04T21:23:03.049968",
       "response_data": null
     },
     {
       "test": "Send Friend Request",
-      "success": false,
-      "details": "Status: 400",
-      "timestamp": "2025-11-04T21:21:23.917568",
-      "response_data": "{\"detail\":\"Friend request already exists\"}"
+      "success": true,
+      "details": "Successfully sent friend request",
+      "timestamp": "2025-11-04T21:23:03.069070",
+      "response_data": null
     },
     {
       "test": "Get Friends List",
       "success": true,
       "details": "Retrieved 1 friend entries",
-      "timestamp": "2025-11-04T21:21:24.004495",
+      "timestamp": "2025-11-04T21:23:03.086988",
       "response_data": null
     },
     {
       "test": "Accept Friend Request",
       "success": true,
       "details": "Successfully accepted friend request",
-      "timestamp": "2025-11-04T21:21:24.889160",
+      "timestamp": "2025-11-04T21:23:03.656459",
       "response_data": null
     },
     {
       "test": "Create Group",
       "success": true,
       "details": "Created group: Racing Buddies with 2 members",
-      "timestamp": "2025-11-04T21:21:26.061007",
+      "timestamp": "2025-11-04T21:23:04.464306",
       "response_data": null
     },
     {
       "test": "Get Groups",
       "success": true,
-      "details": "Retrieved 2 groups",
-      "timestamp": "2025-11-04T21:21:26.092442",
+      "details": "Retrieved 1 groups",
+      "timestamp": "2025-11-04T21:23:04.481398",
       "response_data": null
     },
     {
       "test": "Duplicate Registration (Should Fail)",
       "success": true,
       "details": "Correctly rejected duplicate email",
-      "timestamp": "2025-11-04T21:21:26.111670",
+      "timestamp": "2025-11-04T21:23:04.548650",
       "response_data": null
     },
     {
       "test": "Wrong Password Login (Should Fail)",
       "success": true,
       "details": "Correctly rejected wrong password",
-      "timestamp": "2025-11-04T21:21:27.199060",
+      "timestamp": "2025-11-04T21:23:05.251671",
       "response_data": null
     },
     {
       "test": "Unauthorized Access (Should Fail)",
       "success": true,
       "details": "Correctly rejected request without token",
-      "timestamp": "2025-11-04T21:21:27.211457",
+      "timestamp": "2025-11-04T21:23:05.268587",
       "response_data": null
     },
     {
       "test": "Create Race on Non-existent Circuit (Should Fail)",
       "success": true,
       "details": "Correctly rejected non-existent circuit",
-      "timestamp": "2025-11-04T21:21:27.291632",
+      "timestamp": "2025-11-04T21:23:05.382220",
       "response_data": null
     },
     {
       "test": "Join Non-existent Race (Should Fail)",
       "success": true,
       "details": "Correctly rejected non-existent race",
-      "timestamp": "2025-11-04T21:21:27.309716",
+      "timestamp": "2025-11-04T21:23:05.451082",
       "response_data": null
     }
   ]
